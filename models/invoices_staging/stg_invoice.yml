@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_invoice
+    description: This model contains the invoices and their associated invoice_id
+
+    columns:
+      - name: invoice_id
+        description: Unique invoice ID
+
+      - name: customer_id
+        description: The customer ID 
