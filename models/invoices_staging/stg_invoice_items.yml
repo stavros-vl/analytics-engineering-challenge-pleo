@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_invoice_items
+    description: This model contains data on the invoice line item level along with amount, currency, and period start/end of each item
+
+    columns:
+      - name: invoice_id
+        description: Unique invoice ID
+
+      - name: id
+        description: ID associated with the invoice
+
+      - name: type
+        description: The type of the invoice item
+
+      - name: period_start_at
+        description: The invoice item period start timestamp
+
+      - name: period_end_at
+        description: The invoice item period end timestamp
+
+      - name: amount
+        description: The monetary amount of the invoice item
+
+      - name: currency
+        description: The currency of the amount
+
+      - name: synced_at
+        description: Timestamp of when the data was last updated

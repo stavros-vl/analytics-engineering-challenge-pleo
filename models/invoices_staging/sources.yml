@@ -1,8 +1,7 @@
 version: 2
 
 sources:
-  - name: invoices
-    database: ae-challenge-project  
+  - name: invoices  
     tables:
       - name: invoice_raw
       - name: invoice_item__raw
