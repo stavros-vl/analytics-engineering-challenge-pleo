@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_subscriptions
+    description: This model contains all subscriptions from stg_invoice_items model. 
+                 > Additionally it converts the non-euro amounts to euro using the convert_currency macro
+
+    columns:
+      - name: invoice_id
+        description: Unique invoice ID
+
+      - name: id
+        description: ID associated with the invoice
+
+      - name: period_start_day
+        description: The subscription period start day
+
+      - name: period_end_day
+        description: The subscription period end day
+
+      - name: converted_amount
+        description: The subscription amount converted to euro
+
