@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: customer_mrr_drill_down
+    description: |
+      This model allows users to choose a specific day or customer_id (or both) and see what was the contribution
+      on that day along with the associated invoices
+
+    columns:
+      - name: date
+        description: The day timestamp
+
+      - name: invoice_id
+        description: The invoice id
+
+      - name: customer_id
+        description: The customer id
+        
+      - name: mrr
+        description: The mrr per day
+
