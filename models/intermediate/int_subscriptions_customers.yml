@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: int_subscriptions_customers
+    description: |
+      Combined information on invoice_ids from int_subscriptions and customers information from stg_invoice. 
+      Each customer can have many subscription invoice_id associated
+
+    columns:
+      - name: invoice_id
+        description: Unique invoice ID
+
+      - name: customer_id
+        description: The customer id
+
+      - name: period_start_day
+        description: The subscription period start day
+
+      - name: period_end_day
+        description: The subscription period end day
+
+      - name: converted_amount
+        description: The subscription amount converted to euro
+
