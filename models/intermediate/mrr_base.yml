@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: mrr_base
+    description: This model calculates the base mrr (mrr per day) and adds it to the int_subscriptions model
+
+    columns:
+      - name: invoice_id
+        description: Unique invoice ID
+
+      - name: id
+        description: ID associated with the invoice
+
+      - name: period_start_day
+        description: The subscription period start day
+
+      - name: period_end_day
+        description: The subscription period end day
+
+      - name: converted_amount
+        description: The subscription amount converted to euro
+
+      - name: mrr
+        description: The mrr per day calculated by the formula converted_amount / days between period_start & period_end
+
