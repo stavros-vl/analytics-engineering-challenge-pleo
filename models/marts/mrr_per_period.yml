@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: mrr_per_period
+    description: This is used to expose the mrr per different periods day, week, month, quarter, and year.
+
+    columns:
+      - name: day_s
+        description: Datestamp day
+
+      - name: week_s
+        description: Datestamp week
+
+      - name: month_s
+        description: Datestamp month
+
+      - name: quarter_s
+        description: Datestamp quarter
+
+      - name: year_s
+        description: Datestamp year
+
+      - name: mrr
+        description: The sum of mrr per day 
+
