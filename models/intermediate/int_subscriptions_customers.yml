@@ -22,3 +22,6 @@ models:
       - name: converted_amount
         description: The subscription amount converted to euro
 
+      - name: mrr
+        description: The mrr per day
+
