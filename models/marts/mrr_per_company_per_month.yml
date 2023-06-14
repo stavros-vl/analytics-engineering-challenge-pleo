@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mrr_per_company_per_month
+    description: This model shows the montly contribution of each company to the mrr
+
+    columns:
+      - name: customer_id
+        description: The customer id
+
+      - name: month_
+        description: The month where the mrr is attributed to
+
+      - name: mrr_per_month
+        description: The monthly mrr
+
