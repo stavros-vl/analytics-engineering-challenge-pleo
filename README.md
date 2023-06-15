@@ -9,7 +9,7 @@ You can find a visual representation of the structure [here](https://tree.nathan
 
 More details about the folder structure:
 - The `invoices_staging` folder is used to source from the raw tables in BigQuery and perform some light cleaning, renaming or recasting. In this case, only renaming is performed.
-- The `intermediate` subfolder is where business logic and modeling principles are starting to be applied. This also includes joins to between on staging models or joining between intermediate models
+- The `intermediate` subfolder is where business logic and modeling principles are starting to be applied. This also includes joins to  staging models or joining between intermediate models
 - The `marts` subfolder is where the models for consumption by end users (primarily analysts) are created by combining data from intermediate models. This means that they provide a clean interface and are there to serve specific analytical needs expressed by stakeholders with no additional logic.
 - The `macros` folder contains business definitions and utility functions that can be reused across other models, so we minimize repeated code and we have a single place where we make changes to e.g. definitions
 - The `tests` folder contains custom tests that are used to ensure data reliability/quality
