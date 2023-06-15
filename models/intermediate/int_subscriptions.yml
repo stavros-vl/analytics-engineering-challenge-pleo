@@ -20,4 +20,6 @@ models:
 
       - name: converted_amount
         description: The subscription amount converted to euro
+        tests:
+          - is_not_negative
 
