@@ -6,13 +6,21 @@ models:
 
     columns:
       - name: invoice_id
-        description: Unique invoice ID
+        description: ID associated with the invoice (probably not the true invoice_id)
+        tests:
+          - not_null
 
       - name: id
-        description: ID associated with the invoice
+        description: Unique ID associated with the invoice (in reality must be the invoice_id)
+        tests:
+          - unique
+          - not_null
 
       - name: type
         description: The type of the invoice item
+        tests:
+          - accepted_values:
+              values: ['subscription', 'invoiceitem']
 
       - name: period_start_at
         description: The invoice item period start timestamp
@@ -25,6 +33,9 @@ models:
 
       - name: currency
         description: The currency of the amount
+        tests:
+          - accepted_values:
+              values: ['eur', 'gbp', 'sek', 'dkk']
 
       - name: synced_at
         description: Timestamp of when the data was last updated
