@@ -7,6 +7,11 @@ models:
     columns:
       - name: invoice_id
         description: Unique invoice ID
+        tests:
+          - unique
+          - not_null
 
       - name: customer_id
         description: The customer ID 
+        tests:
+          - not_null
